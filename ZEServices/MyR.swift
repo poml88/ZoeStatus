@@ -89,13 +89,15 @@ public class MyR {
     var password: String!
     var version: Version
     var kamereon: String?
+    var apikey: String?
     var vehicle: Int
     
-    init(username u:String, password p:String, version v:Version, kamereon k:String, vehicle vid:Int) {
+    init(username u:String, password p:String, version v:Version, kamereon k:String, apikey a:String, vehicle vid:Int) {
         username = u
         password = p
         version = v
         kamereon = k
+        apikey = a
         vehicle = vid // index 0...4 for 1st...5th in GUI
     }
     struct Context{
@@ -153,7 +155,7 @@ public class MyR {
             apiKeysError = false // keep doing attempts to fetch the keys
         } else { // "Error retrieving targets and api keys"
             // server error, statusCode = 403 (as of 2025)
-            context.apiKeysAndUrls = ApiKeyResult(servers: ApiKeyResult.Servers(wiredProd: ApiKeyResult.Servers.ServerAndKey(target: "https://api-wired-prod-1-euw1.wrd-aws.com", apikey: "oF09WnKqvBDcrQzcW1rJNpjIuy7KdGaB"), gigyaProd: ApiKeyResult.Servers.ServerAndKey(target: "https://accounts.eu1.gigya.com", apikey: "3_7PLksOyBRkHv126x5WhHb-5pqC1qFR8pQjxSeLB6nhAnPERTUlwnYoznHSxwX668")))
+            context.apiKeysAndUrls = ApiKeyResult(servers: ApiKeyResult.Servers(wiredProd: ApiKeyResult.Servers.ServerAndKey(target: "https://api-wired-prod-1-euw1.wrd-aws.com", apikey: "oF09WnKqvBDcrQzcW1rJNpjIuy7KdGaB"), gigyaProd: ApiKeyResult.Servers.ServerAndKey(target: "https://accounts.eu1.gigya.com", apikey: "3_VgdkgtIRH3AdHvJm-cjV2ug2EFE0lxt0IJzMC4MFqZjFpn_GYFXVdNZ19L7wZX0N")))
             apiKeysError = true // do not try again (only after App restart)
         }
         
@@ -162,6 +164,13 @@ public class MyR {
             os_log("Override Kamereon Key: %{public}s", log: serviceLog, type: .debug, kamereon!)
             context.apiKeysAndUrls!.servers.wiredProd.apikey = kamereon!
         }
+        
+        // override API key if a key is specified in user preferences:
+        if apikey != "" {
+            os_log("Override API Key: %{public}s", log: serviceLog, type: .debug, apikey!)
+            context.apiKeysAndUrls!.servers.gigyaProd.apikey = apikey!
+        }
+
         
         // Fetch session key from the previously learned URL using the retreived API key
         let endpointUrl = URL(string: context.apiKeysAndUrls!.servers.gigyaProd.target + "/accounts.login")!

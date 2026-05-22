@@ -29,6 +29,7 @@ class SessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
                sc.api = ServiceConnection.ApiVersion(rawValue: userDefaults.integer(forKey: "api_preference"))
                sc.units = ServiceConnection.Units(rawValue: userDefaults.integer(forKey: "units_preference"))
                sc.kamereon = userDefaults.string(forKey: "kamereon_preference")
+               sc.apikey = userDefaults.string(forKey: "apikey_preference")
                sc.vehicle = userDefaults.integer(forKey: "vehicle_preference")
            }
        }
@@ -60,6 +61,7 @@ class SessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
             userDefaults.set(sc.api?.rawValue, forKey: "api_preference")
             userDefaults.set(sc.units?.rawValue, forKey: "units_preference")
             userDefaults.set(sc.kamereon, forKey: "kamereon_preference")
+            userDefaults.set(sc.apikey, forKey: "apikey_preference")
             userDefaults.set(sc.vehicle, forKey: "vehicle_preference")
 
             userDefaults.synchronize()

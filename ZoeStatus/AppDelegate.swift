@@ -54,6 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
             if message["kamereon"] != nil {
                 reply["kamereon"] = userDefaults.string(forKey: "kamereon_preference") // cannot be nil
             }
+            if message["apikey"] != nil {
+                reply["apikey"] = userDefaults.string(forKey: "apikey_preference") // cannot be nil
+            }
             if message["vehicle"] != nil {
                 reply["vehicle"] = userDefaults.integer(forKey: "vehicle_preference") // cannot be nil
             }

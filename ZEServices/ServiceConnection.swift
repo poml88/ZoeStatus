@@ -73,7 +73,8 @@ public class ServiceConnection {
     public var userName:String?
     public var password:String?
     public var kamereon:String?
-    
+    public var apikey:String?
+
     public var api:ApiVersion?
     public var units:Units?
     public var vehicle:Int?
@@ -172,7 +173,14 @@ public class ServiceConnection {
     
     func login_MyR_async(version: MyR.Version) async -> (result:Bool, errorMessage:String?){
         os_log("New API login", log: serviceLog, type: .default)
-        myR = MyR(username: userName!, password: password!, version: .v1, kamereon: kamereon!, vehicle: vehicle!)
+        myR = MyR(
+            username: userName!,
+            password: password!,
+            version: .v1,
+            kamereon: kamereon!,
+            apikey: apikey!,
+            vehicle: vehicle!
+        )
 
         let result = await myR.handleLoginProcessAsync()
         if let errorMessage = result.errorMessage {

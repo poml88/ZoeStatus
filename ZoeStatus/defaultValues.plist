@@ -8,6 +8,8 @@
 	<integer>1</integer>
 	<key>kamereon_preference</key>
 	<string>YjkKtHmGfaceeuExUDKGxrLZGGvtVS0J</string>
+	<key>apikey_preference</key>
+	<string>3_VgdkgtIRH3AdHvJm-cjV2ug2EFE0lxt0IJzMC4MFqZjFpn_GYFXVdNZ19L7wZX0N</string>
 	<key>vehicle_preference</key>
 	<integer>0</integer>
 </dict>

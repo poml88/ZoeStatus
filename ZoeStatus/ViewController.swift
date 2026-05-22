@@ -156,7 +156,16 @@ class ViewController: UIViewController, MapViewControllerDelegate {
          }
          userDefaults.setValue(sc.kamereon, forKey: "kamereon_preference") // preset this field in current release
 
-         
+        let newApikey = userDefaults.string(forKey: "apikey_preference")
+        if ( sc.apikey != newApikey )
+        {
+            sc.apikey = newApikey
+            os_log("Never started before or API key was switched, forcing new login", log: serviceLog, type: .default)
+            sc.tokenExpiry = nil
+        }
+        userDefaults.setValue(sc.apikey, forKey: "apikey_preference") // preset this field in current release
+
+        
          let new_api = ServiceConnection.ApiVersion(rawValue: 1 /*userDefaults.integer(forKey: "api_preference")*/) // dummy value 1, which is ignored
          /* Renault is no longer using a consistent version, i.e. battery state only works as v2 and cockpit as v1. */
         
@@ -172,6 +181,7 @@ class ViewController: UIViewController, MapViewControllerDelegate {
          sharedDefaults?.set(sc.userName, forKey: "userName")
          sharedDefaults?.set(sc.password, forKey: "password")
          sharedDefaults?.set(sc.kamereon, forKey: "kamereon")
+         sharedDefaults?.set(sc.apikey, forKey: "apikey")
          sharedDefaults?.set(sc.vehicle, forKey: "vehicle")
 
         

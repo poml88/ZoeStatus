@@ -84,6 +84,7 @@ class WidgetViewController: UIViewController, NCWidgetProviding {
         let _ = sharedDefaults?.integer(forKey: "api")
         let units = sharedDefaults?.integer(forKey: "units")
         let kamereon = sharedDefaults?.string(forKey: "kamereon")
+        let apikey = sharedDefaults?.string(forKey: "apikey")
         let vehicle = sharedDefaults?.integer(forKey: "vehicle")
        //print("\(userName) \(password)")
         
@@ -102,6 +103,7 @@ class WidgetViewController: UIViewController, NCWidgetProviding {
         /* Renault is no longer using a consistent version, i.e. battery state only works as v2 and cockpit as v1. */
         sc.units = ServiceConnection.Units(rawValue: units!)
         sc.kamereon = kamereon
+        sc.apikey = apikey
         sc.vehicle = vehicle
         
         if sc.userName == "simulation", sc.password == "simulation"
