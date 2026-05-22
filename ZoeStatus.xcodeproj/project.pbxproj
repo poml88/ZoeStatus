@@ -929,7 +929,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Modern Watch App/ZoeStatus Modern Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				DEVELOPMENT_ASSET_PATHS = "\"ZoeStatus Modern Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -966,7 +966,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Modern Watch App/ZoeStatus Modern Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				DEVELOPMENT_ASSET_PATHS = "\"ZoeStatus Modern Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1067,7 +1067,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Widget/ZoeStatusWidget.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				INFOPLIST_FILE = "ZoeStatus Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1092,7 +1092,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Widget/ZoeStatusWidget.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				INFOPLIST_FILE = "ZoeStatus Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1121,7 +1121,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Modern WidgetExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZoeStatus Modern Widget/Info.plist";
@@ -1156,7 +1156,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Modern WidgetExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZoeStatus Modern Widget/Info.plist";
@@ -1311,7 +1311,7 @@
 				CODE_SIGN_ENTITLEMENTS = ZoeStatus/ZoeStatus.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				INFOPLIST_FILE = ZoeStatus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.0;
@@ -1336,7 +1336,7 @@
 				CODE_SIGN_ENTITLEMENTS = ZoeStatus/ZoeStatus.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				INFOPLIST_FILE = ZoeStatus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.0;
@@ -1363,7 +1363,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Modern Watch ComplicationsExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				DEVELOPMENT_TEAM = J6G8439DVH;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1400,7 +1400,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Modern Watch ComplicationsExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				DEVELOPMENT_TEAM = J6G8439DVH;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1504,7 +1504,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Intents Extension/ZoeStatus Intents Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZoeStatus Intents Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ZOE Status Intents Extension";
@@ -1535,7 +1535,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ZoeStatus Intents Extension/ZoeStatus Intents Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4.5.1;
+				CURRENT_PROJECT_VERSION = 1.4.5.2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZoeStatus Intents Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ZOE Status Intents Extension";

@@ -42,17 +42,18 @@ class SessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
     // MARK: - Watch Connectivity
 
     var session: WCSession!
-    let msg = ["userName":"", "password":"", "api":"", "units":"", "kamereon":"", "vehicle":""]
+    let msg = ["userName":"", "password":"", "api":"", "units":"", "kamereon":"", "apikey":"", "vehicle":""]
 
     fileprivate func extractCredentialsFromContext(_ context: [String:Any]) {
         print("Extracting credentials from: \(context.description)")
         
-        if let userName = context["userName"], let password = context["password"], let api = context["api"], let units = context["units"], let kamereon = context["kamereon"], let vehicle = context["vehicle"]{
+        if let userName = context["userName"], let password = context["password"], let api = context["api"], let units = context["units"], let kamereon = context["kamereon"], let apikey = context["apikey"], let vehicle = context["vehicle"]{
             sc.userName =  userName as? String
             sc.password = password as? String
             sc.api = ServiceConnection.ApiVersion(rawValue: (api as? Int) ?? 0)
             sc.units = ServiceConnection.Units(rawValue: (units as? Int) ?? 0)
             sc.kamereon = kamereon as? String
+            sc.apikey = apikey as? String
             sc.vehicle = vehicle as? Int
             // store preferences
             let userDefaults = UserDefaults.standard
