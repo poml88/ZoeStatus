@@ -103,6 +103,7 @@ class IntentHandlerPowerLevel:INExtension, INGetCarPowerLevelStatusIntentHandlin
         sc.api = ServiceConnection.ApiVersion(rawValue: (sharedDefaults?.integer(forKey: "api"))!)
         sc.units = ServiceConnection.Units(rawValue: (sharedDefaults?.integer(forKey: "units"))!)
         sc.kamereon = sharedDefaults?.string(forKey: "kamereon")
+        sc.apikey = sharedDefaults?.string(forKey: "apikey")
         sc.vehicle = sharedDefaults?.integer(forKey: "vehicle")
         
         if sc.userName == "simulation", sc.password == "simulation"
