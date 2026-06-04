@@ -73,6 +73,7 @@ class SessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
             sharedDefaults?.set(sc.userName, forKey: "userName")
             sharedDefaults?.set(sc.password, forKey: "password")
             sharedDefaults?.set(sc.kamereon, forKey: "kamereon")
+            sharedDefaults?.set(sc.apikey, forKey: "apikey")
             sharedDefaults?.set(sc.vehicle, forKey: "vehicle")
             //sharedDefaults?.set(sc.api?.rawValue, forKey: "api")
             sharedDefaults?.set(sc.units!.rawValue, forKey: "units")
