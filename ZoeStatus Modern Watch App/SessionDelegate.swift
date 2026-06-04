@@ -29,7 +29,7 @@ class SessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
                sc.api = ServiceConnection.ApiVersion(rawValue: userDefaults.integer(forKey: "api_preference"))
                sc.units = ServiceConnection.Units(rawValue: userDefaults.integer(forKey: "units_preference"))
                sc.kamereon = userDefaults.string(forKey: "kamereon_preference")
-               sc.apikey = userDefaults.string(forKey: "apikey_preference")
+               sc.apikey = userDefaults.string(forKey: "apikey_preference") ?? "dummy" // provide dummy string for this recently added key, so unwrapping does not crash (must manually re-transfer credentials to get actual apikey from phone)
                sc.vehicle = userDefaults.integer(forKey: "vehicle_preference")
            }
        }
